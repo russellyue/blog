@@ -28,4 +28,13 @@ def tag_version(version):
     Tag new version
     """
     local("git tag %s" % version)
-    local("git push origin %" % version)
+    local("git push origin %s" % version)
+
+
+@task
+def fetch_version(version):
+    """
+    Fetch git version
+    """
+    local("wget https://codeload.github.com/russellyue/blog/tar.gz/%s" %
+          version)
