@@ -39,3 +39,11 @@ def fetch_version(version):
     """
     local("wget https://codeload.github.com/russellyue/blog/tar.gz/%s" %
           version)
+
+
+@task
+def test():
+    """
+    Run test
+    """
+    local("./manage.py test")
