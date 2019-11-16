@@ -2,6 +2,7 @@ from fabric.api import local
 from fabric.decorators import task
 
 
+@task
 def install(requirements_env="dev"):
     """
     Install required packages

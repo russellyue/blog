@@ -1,0 +1,5 @@
+{
+  "python.pythonPath": "py37env/bin/python",
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "yapf"
+}
