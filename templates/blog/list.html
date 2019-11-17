@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+  </head>
+  {% for blog in blogs%}
+  <h2>{{blog.title}}</h2>
+  <p>
+    {{blog.body | slice:"80"}}
+  </p>
+  <p>
+    {{blog.posted}}-By {{blog.author}}
+  </p>
+  {% endfor %}
+</html>
